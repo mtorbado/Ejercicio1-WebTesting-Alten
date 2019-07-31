@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Valid administrator login",
+        "description": "",
+        "id": "user-login;valid-administrator-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10527437100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The login web page is accessible",
+            "match": {
+              "location": "StepDefinitions.theLoginWebPageIsAccessible()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 906210400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I introduce the administrator user \u0026 password",
+            "match": {
+              "location": "StepDefinitions.iIntroduceTheAdministratorUserPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3025829200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The \"my Profile\" page is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "my Profile",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefinitions.thePageIsShown(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42162600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The \"edit Profile\" button is enabled",
+            "match": {
+              "arguments": [
+                {
+                  "val": "edit Profile",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefinitions.theButtonIsEnabled(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User login",
+    "description": "",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/userLogin.feature",
+    "tags": []
+  }
+]
